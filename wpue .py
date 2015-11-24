@@ -47,8 +47,7 @@ for x in range(1,usern):
 	u = []
 	u.append(s.split('<meta property="og:title" content="')[1].split(', ')[0])
 	u.append(s.split('<meta property="og:url" content="'+site+'author/')[1].split('/"')[0])
-# /" />
-	#print(u)
+
 	users.append(u)
 
 print("[+]: %100 Done      ")
@@ -88,7 +87,6 @@ for x in range(0,len(allusers)):
 	ids = 3-len(str(x))
 	ids = ids*" "
 	
-	#print(len(spaces), x, len(spaces2))
 	uprint = "| "+str(x)+ids+"| "+allusers[x][1]+spaces+"| "+allusers[x][0]+spaces2+"|";
 	print(uprint)
 
